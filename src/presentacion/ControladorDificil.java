@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package presentacion;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.JLabel;
+
+/**
+ *
+ * @author Usuario
+ */
+public class ControladorDificil implements MouseListener {
+
+    private VentanaDificil ventana;
+
+    public ControladorDificil(VentanaDificil aThis) {
+        ventana = aThis;
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent me) {
+        JLabel etiqueta = (JLabel) me.getSource();
+        ventana.getModelo().Crear(etiqueta);
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent me) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent me) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent me) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent me) {
+
+    }
+
+}
